@@ -21,11 +21,16 @@
             android:configChanges="layoutDirection|fontScale|locale"
             android:launchMode="singleTop"
             android:screenOrientation="fullSensor" />
-        <activity android:name=".givelike.GiveLikeActivity"
+        <activity
+            android:name=".givelike.GiveLikeActivity"
             android:configChanges="layoutDirection|fontScale|locale"
             android:launchMode="singleTop"
-            android:screenOrientation="fullSensor"
-            />
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".horizontalprogressbar.HorizontalProgressBarActivity"
+            android:configChanges="layoutDirection|fontScale|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
     </application>
 
 </manifest>

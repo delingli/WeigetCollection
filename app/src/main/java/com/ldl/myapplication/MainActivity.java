@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.ldl.myapplication.givelike.GiveLikeActivity;
+import com.ldl.myapplication.horizontalprogressbar.HorizontalProgressBarActivity;
 import com.ldl.myapplication.locusset.LocusSetActivity;
 
 import java.lang.annotation.AnnotationTypeMismatchException;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                     LocusSetActivity.startActivity(MainActivity.this);
                 } else if (position == 1) {
                     GiveLikeActivity.startActivity(MainActivity.this);
+                } else if (position == 2) {
+                    HorizontalProgressBarActivity.startActivity(MainActivity.this);
                 } else {
                     Toast.makeText(MainActivity.this, "敬请等待", Toast.LENGTH_SHORT).show();
                 }

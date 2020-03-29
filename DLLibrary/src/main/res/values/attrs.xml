@@ -140,4 +140,12 @@
         <attr name="arc_radius" format="dimension" />
         <attr name="lineY" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="RoundedCornersRadius" format="dimension" />
+        <attr name="Progress" format="integer" />
+        <attr name="MaxProgress" format="integer" />
+        <attr name="BgColor" format="color" />
+        <attr name="ProgressColor" format="color" />
+    </declare-styleable>
 </resources>

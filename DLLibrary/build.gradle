@@ -1,14 +1,14 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 //项目主页
-def siteUrl = 'http://git.oschina.net/zhengliang_blog/shadow-view'
+def siteUrl = 'https://github.com/delingli/WeigetCollection'
 publish {
     repoName = 'DLLibrary'//远程仓库名字,不指明，默认是上传到maven
     userOrg = 'deling'//bintray.com的用户名
     groupId = 'com.ldl.dllibrary'//jcenter上的路径  //这个是开源库compile时的前缀，可以随意写
     artifactId = 'DLLibrary'//项目名
     publishVersion = '1.0.0'//版本
-    desc = '测试一下'
+    desc = '自定义UI组件集合'
     website = siteUrl  //github地址，方便以后查看，可以随意写
 }
 tasks.withType(Javadoc) {//防止编码问题

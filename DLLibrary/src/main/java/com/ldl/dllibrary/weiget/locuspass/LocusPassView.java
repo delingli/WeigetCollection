@@ -11,6 +11,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+
 public class LocusPassView extends View{
     
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -25,19 +27,28 @@ public class LocusPassView extends View{
     
     
     private OnCompleteListener onCompleteListener = null;
-    
-    public LocusPassView(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-    }
-    public LocusPassView(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
-    }
+
+
+
+
+
     public LocusPassView(Context context) {
         this(context,null);
     }
-    
-    
-    
+
+    public LocusPassView(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs,-1);
+    }
+
+    public LocusPassView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    public LocusPassView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+    }
+
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         // TODO Auto-generated method stub
